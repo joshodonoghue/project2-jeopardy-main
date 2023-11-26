@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(9,18,114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.question{
+    font-weight: bold;
+    font-size: 60px;
+    color: #fff;
+}
+.answer {
+    height: 50px;
+    width: 250px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}

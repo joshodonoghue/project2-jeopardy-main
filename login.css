@@ -1,0 +1,15 @@
+body{
+background-color: bisque;
+
+
+}
+.login-container{
+top: 20%;
+background-color: white;
+border: 5px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+align-content: center;
+position: absolute;
+width: 40%;
+left: 30%;
+}

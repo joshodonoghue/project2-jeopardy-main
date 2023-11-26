@@ -1,0 +1,26 @@
+body {/* Keeps the background flush with window */
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden;}
+.htp{
+display: flex;
+flex-wrap: wrap;
+width: 100vw;     /* 100% of the viewport width */
+    height: 100vh;    /* 100% of the viewport height */
+      
+background-color: aqua;
+}
+.instruction{
+    
+width: 80%;
+height: 33%;
+background-color: blueviolet;
+}
+.pic{
+    
+    background-color: brown;
+    width: 20%;
+    height: 33%;
+
+
+}

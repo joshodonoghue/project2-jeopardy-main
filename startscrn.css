@@ -1,0 +1,118 @@
+body {
+    background-color: purple;
+} 
+ header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100; /* Higher z-index */
+    position: fixed; /* Changed to fixed */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust the exact centering */
+    width: 100%; /* Full width */
+    height: auto; /* Auto height */
+}
+
+h1 {
+    font-size: 10em; /* Adjust the size as needed */
+    text-align: center;
+}
+.earth {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
+     z-index: 0;
+}
+  
+  .earth:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -20px -20px 50px 2px #000 inset;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  
+  .earth > div {
+    width: 200%;
+    height: 100%;
+    animation: spin 20s linear alternate infinite;
+    background: url('physical-world-map.jpg');
+    z-index: 0;
+    background-size: cover;
+  }
+  @keyframes spin {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  .hover-button {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for smooth color change */
+    position: absolute; /* or 'fixed' depending on your need */
+    top: 85%;
+    left: 43%;
+}
+
+/* Hover effect */
+.hover-button:hover {
+    background-color: #45a049; /* Darker shade of green */
+}
+.hover-button1 {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for smooth color change */
+    position: absolute; /* or 'fixed' depending on your need */
+    top: 75%;
+    left: 40%;
+}
+.hover-button2 {
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transition for smooth color change */
+  position: absolute; /* or 'fixed' depending on your need */
+  top: 75%;
+  left: 50%;
+}
+
+/* Hover effect */
+.hover-button1:hover {
+    background-color: #45a049; /* Darker shade of green */
+}

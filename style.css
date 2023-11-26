@@ -1,0 +1,42 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 15px;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgb(9,18,114);
+    border: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body{
+    background-color: #000;
+  }
+  .price{
+    font-size: 60px;
+    font-family:'Segoe UI';
+    font-weight: bold;
+    color: rgb(205, 161, 90);
+
+  }  
+  a:visited .price {
+    color: purple; 
+  }
+  .grid-container > a {
+    text-decoration: none;
+    display: block;
+  }
+  .grid-container > a {
+    margin: 0;
+    padding: 0;
+  }
+  .title{
+    color:rgb(205, 161, 90);
+    font-size: 30px;
+
+  }
